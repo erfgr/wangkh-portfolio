@@ -1,0 +1,15 @@
+for(i = 10; i > 0; i ++) {
+    while(1) {
+        printf("HaHa");
+        printf("HeHe");
+        if(i > 5) {
+            printf("Hello world!");
+        }
+        else if(i > 8) {
+            printf("simple testcase");
+            while(1) {
+                printf("Boring!!");
+            }
+        }
+    }
+}

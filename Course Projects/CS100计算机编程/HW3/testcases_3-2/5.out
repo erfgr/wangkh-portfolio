@@ -1,0 +1,15 @@
+if(a > 1) {
+    g();
+}
+else {
+    f();
+}
+if(k()) {
+    if(k2()) {
+        dosomething();
+        dosomething();
+    }
+}
+else {
+    dosomething();
+}
