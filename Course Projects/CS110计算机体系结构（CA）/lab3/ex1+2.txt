@@ -1,0 +1,28 @@
+Ex1:
+	1. .data and .word : declare and initialize static data in the program's data section, which is a part of the program's memory that stores global and static data. 
+	#Store subsequent items in the static segment at the next available address.
+	#Store listed values as unaligned 32-bit words.
+	.text : specify the beginning of the program's code section, where the executable instructions are stored.
+	
+	2. 34. the 9th Fibonacci number
+
+	3. in the t3 register
+
+	4. addi  t3, x0, 13
+	
+Ex2:
+	1. t0
+	
+	2. t1 and t2
+	
+	3. loop:
+		slli t3, t0, 2
+		add t4, t1, t3
+		lw t5, 0(t4)
+		beq t5, x0, exit
+		add t6, t2, t3
+		sw t5, 0(t6)
+		addi t0, t0, 1
+		jal x0, loop
+	
+	4. The pointers are manipulated by calculating the memory address of each element in the arrays using t1 and t2 as base addresses, and then using t3 as an offset that is calculated as the index t0 multiplied by 4. "lw" loads the value at the address pointed to by t4 into t5, and "sw" stores the value in t5 at the address pointed to by t6. The loop counter t0 is incremented by 1 after each iteration using "addi t0, t0, 1". The loop continues until the value loaded into t5 is zero, at which point control is transferred to the exit label.

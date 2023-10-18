@@ -1,0 +1,5 @@
+The functions bad_vector_new() and also_bad_vector_new() are bad because they both return pointers to variables that are allocated on the stack, which means that they will no longer be valid once the functions return.
+
+bad_vector_new() creates a local variable v and sets the return value to a pointer to that variable. Once the function returns, the memory allocated for v will be freed, and the returned pointer will no longer be valid. Accessing the returned pointer after the function returns will lead to undefined behavior, which can cause crashes or other unexpected errors.
+
+also_bad_vector_new() returns a copy of a local variable v by value. While the returned copy may seem valid, it is actually a shallow copy of the original variable, meaning that the data pointer points to the same memory location as the original v variable. This can lead to problems if the original variable is freed before the returned copy is used, as accessing the memory pointed to by data will result in undefined behavior.
