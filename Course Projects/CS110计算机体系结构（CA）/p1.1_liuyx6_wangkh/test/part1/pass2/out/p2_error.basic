@@ -1,2 +1,0 @@
-addi x5 x28 0
-bne x5 x6 0

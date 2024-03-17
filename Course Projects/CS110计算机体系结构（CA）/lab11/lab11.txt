@@ -1,7 +1,0 @@
-Ex1.
-	TLB Hits : 4
-	TLB Misses : 6
-	Page Hits : 0
-	Page Faults : 6
-Ex2.
-	01 21 41 61 81 A1 C1 E1 11 31

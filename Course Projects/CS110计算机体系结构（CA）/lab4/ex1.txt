@@ -1,9 +1,0 @@
-	1.simple_fn:	t0 is called but undefined
-	  naive_pow:	prologue,epilogue
-	  inc_arr:	prologue,epilogue
-	
-	2.NO, they are only used to save and restore the value of register s0, which is being used as a temporary variable within the loop.
-	
-	3.The function makes a call to another function helper_fn and ra needs to be saved to be return from that function later.
-	
-	4.helper_fn does not involve any function calls or arguments being passed in, and it is a simple function that increments the value stored at the memory address pointed to by a0.

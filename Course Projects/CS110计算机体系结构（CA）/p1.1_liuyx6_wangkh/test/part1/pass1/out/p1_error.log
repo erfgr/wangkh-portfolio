@@ -1,6 +1,0 @@
-Error - extra argument at line 2: t0
-Error - invalid label at line 6: 3hello
-Error - extra argument at line 8: sll
-Error: name 'label' already exists in table.
-Error - extra argument at line 12: 5
-One or more errors encountered during assembly operation.

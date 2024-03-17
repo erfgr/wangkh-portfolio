@@ -1,8 +1,0 @@
-get_bit:
-To get the nth bit of x, we first shift x to the right n times using x >> n. This will move the bit we're interested in to the rightmost position. We then perform a bitwise AND with 1, which will clear all bits in x except for the rightmost bit. This gives us the value of the nth bit.
-
-set_bit:
-To set the nth bit of x to v, we first clear the nth bit of x using the expression *x & ~(1 << n). This will set the nth bit to 0. We then set the nth bit to v using the expression (v << n). This will shift v to the left n times, which will move the bit we want to set to the nth position. Finally, we combine the two expressions using the bitwise OR operator |.
-
-flip_bit:
-To flip the nth bit of x, we use the XOR operator ^ with the expression 1 << n. This will flip the nth bit of x without affecting any other bits.
